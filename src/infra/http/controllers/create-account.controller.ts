@@ -10,7 +10,7 @@ import {
 import { z } from 'zod'
 import { ZodValidationPipe } from '../pipes/zod-validation-pipe'
 import { RegisterStudentUseCase } from '@/domain/forum/application/use-cases/register-student'
-import { StudentAlreadyExistsError } from '@/domain/forum/application/use-cases/erros/student-alredy-exists-error'
+import { StudentAlreadyExistsError } from '@/domain/forum/application/use-cases/errors/student-alredy-exists-error'
 import { Public } from '@/infra/auth/public'
 
 const createAccountBodySchema = z.object({

@@ -3,7 +3,7 @@ import { Injectable } from '@nestjs/common'
 import { Student } from '../../enterprise/entities/student'
 import { StudentsRepository } from '../repositories/students-repository'
 import { HashGenerator } from '../cryptography/hash-generator'
-import { StudentAlreadyExistsError } from './erros/student-alredy-exists-error'
+import { StudentAlreadyExistsError } from './errors/student-alredy-exists-error'
 
 interface RegisterStudentUseCaseRequest {
   name: string
